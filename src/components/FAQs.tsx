@@ -75,7 +75,7 @@ export const FAQs = () => {
         </h2>
         <div className="mt-12 max-w-[648px] mx-auto">
           {items.map(({ question, answer }) => (
-            <AccordionItems question={question} answer={answer} />
+            <AccordionItems question={question} answer={answer} key={answer} />
           ))}
         </div>
       </div>
